@@ -33,6 +33,7 @@
 		D108320A2A0BCB00004E3BAF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832092A0BCB00004E3BAF /* ProfileView.swift */; };
 		D108320C2A0BCBA5004E3BAF /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */; };
 		D108320E2A0BCD40004E3BAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108320D2A0BCD40004E3BAF /* User.swift */; };
+		D10832122A0BD6B1004E3BAF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */; };
 		D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F52A095451009997D4 /* MeditationApp.swift */; };
 		D140A3F82A095451009997D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F72A095451009997D4 /* ContentView.swift */; };
 		D140A3FA2A095454009997D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D140A3F92A095454009997D4 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		D10832092A0BCB00004E3BAF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		D108320D2A0BCD40004E3BAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D140A3F22A095451009997D4 /* MeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D140A3F52A095451009997D4 /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		D140A3F72A095451009997D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,8 +132,8 @@
 		D10832012A0BC560004E3BAF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				D10832032A0BC584004E3BAF /* LoginView.swift */,
-				D10832072A0BC970004E3BAF /* RegistrationView.swift */,
+				D10832102A0BD6A2004E3BAF /* ViewModel */,
+				D108320F2A0BD697004E3BAF /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -142,6 +144,23 @@
 				D10832092A0BCB00004E3BAF /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D108320F2A0BD697004E3BAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D10832032A0BC584004E3BAF /* LoginView.swift */,
+				D10832072A0BC970004E3BAF /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D10832102A0BD6A2004E3BAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D140A3E92A095451009997D4 = {
@@ -163,10 +182,10 @@
 		D140A3F42A095451009997D4 /* MeditationApp */ = {
 			isa = PBXGroup;
 			children = (
+				D10831FC2A0BC520004E3BAF /* App */,
+				D10831FD2A0BC525004E3BAF /* Components */,
 				D10831FF2A0BC52E004E3BAF /* Model */,
 				D10831FE2A0BC52A004E3BAF /* Core */,
-				D10831FD2A0BC525004E3BAF /* Components */,
-				D10831FC2A0BC520004E3BAF /* App */,
 				D140A3F92A095454009997D4 /* Assets.xcassets */,
 				D140A3FB2A095454009997D4 /* Preview Content */,
 			);
@@ -285,6 +304,7 @@
 				D108320A2A0BCB00004E3BAF /* ProfileView.swift in Sources */,
 				D10832082A0BC970004E3BAF /* RegistrationView.swift in Sources */,
 				D108320C2A0BCBA5004E3BAF /* SettingsRowView.swift in Sources */,
+				D10832122A0BD6B1004E3BAF /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

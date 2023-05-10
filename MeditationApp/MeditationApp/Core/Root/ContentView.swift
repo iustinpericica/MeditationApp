@@ -12,9 +12,16 @@ struct ContentView: View {
     @State var email = ""
     @State var password = ""
     @State private var userIsLoggedIn = false
+    @EnvironmentObject var viewModel: AuthViewModel
 
     var body: some View {
-        Text("Success")
+        Group {
+            if viewModel.userSession != nil {
+                ProfileView()
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 
