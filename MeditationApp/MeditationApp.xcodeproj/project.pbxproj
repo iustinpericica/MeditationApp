@@ -34,6 +34,10 @@
 		D108320C2A0BCBA5004E3BAF /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */; };
 		D108320E2A0BCD40004E3BAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108320D2A0BCD40004E3BAF /* User.swift */; };
 		D10832122A0BD6B1004E3BAF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */; };
+		D10832152A0BF2DE004E3BAF /* ScaffoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832142A0BF2DE004E3BAF /* ScaffoldView.swift */; };
+		D10832182A0BF384004E3BAF /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832172A0BF384004E3BAF /* ExercisesView.swift */; };
+		D108321A2A0BF644004E3BAF /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832192A0BF644004E3BAF /* ExerciseCardView.swift */; };
+		D108321C2A0C0974004E3BAF /* BreatheExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */; };
 		D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F52A095451009997D4 /* MeditationApp.swift */; };
 		D140A3F82A095451009997D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F72A095451009997D4 /* ContentView.swift */; };
 		D140A3FA2A095454009997D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D140A3F92A095454009997D4 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 		D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		D108320D2A0BCD40004E3BAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D10832142A0BF2DE004E3BAF /* ScaffoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffoldView.swift; sourceTree = "<group>"; };
+		D10832172A0BF384004E3BAF /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		D10832192A0BF644004E3BAF /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
+		D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheExerciseView.swift; sourceTree = "<group>"; };
 		D140A3F22A095451009997D4 /* MeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D140A3F52A095451009997D4 /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		D140A3F72A095451009997D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 			children = (
 				D10832052A0BC6F2004E3BAF /* InputView.swift */,
 				D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */,
+				D10832192A0BF644004E3BAF /* ExerciseCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -106,6 +115,8 @@
 		D10831FE2A0BC52A004E3BAF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D10832162A0BF375004E3BAF /* Exercises */,
+				D10832132A0BF2C7004E3BAF /* Scaffold */,
 				D10832022A0BC56A004E3BAF /* Profile */,
 				D10832012A0BC560004E3BAF /* Authentication */,
 				D10832002A0BC550004E3BAF /* Root */,
@@ -161,6 +172,23 @@
 				D10832112A0BD6B1004E3BAF /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D10832132A0BF2C7004E3BAF /* Scaffold */ = {
+			isa = PBXGroup;
+			children = (
+				D10832142A0BF2DE004E3BAF /* ScaffoldView.swift */,
+			);
+			path = Scaffold;
+			sourceTree = "<group>";
+		};
+		D10832162A0BF375004E3BAF /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				D10832172A0BF384004E3BAF /* ExercisesView.swift */,
+				D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */,
+			);
+			path = Exercises;
 			sourceTree = "<group>";
 		};
 		D140A3E92A095451009997D4 = {
@@ -297,10 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10832042A0BC584004E3BAF /* LoginView.swift in Sources */,
+				D10832182A0BF384004E3BAF /* ExercisesView.swift in Sources */,
+				D108321A2A0BF644004E3BAF /* ExerciseCardView.swift in Sources */,
 				D10832062A0BC6F2004E3BAF /* InputView.swift in Sources */,
+				D10832152A0BF2DE004E3BAF /* ScaffoldView.swift in Sources */,
 				D140A3F82A095451009997D4 /* ContentView.swift in Sources */,
 				D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */,
 				D108320E2A0BCD40004E3BAF /* User.swift in Sources */,
+				D108321C2A0C0974004E3BAF /* BreatheExerciseView.swift in Sources */,
 				D108320A2A0BCB00004E3BAF /* ProfileView.swift in Sources */,
 				D10832082A0BC970004E3BAF /* RegistrationView.swift in Sources */,
 				D108320C2A0BCBA5004E3BAF /* SettingsRowView.swift in Sources */,
