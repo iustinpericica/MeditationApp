@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    @State var email = ""
+    @State var password = ""
+    @State private var userIsLoggedIn = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Success")
     }
 }
 
