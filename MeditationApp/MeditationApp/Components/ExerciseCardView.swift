@@ -25,6 +25,7 @@ struct ExerciseCardView: View {
             Text(exerciseName)
                 .font(.title2)
                 .fontWeight(.semibold)
+                .foregroundColor(.black)
                 .padding(.horizontal, 16)
             
             Text(exerciseDescription)
