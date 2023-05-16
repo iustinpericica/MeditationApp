@@ -18,9 +18,17 @@ struct ExercisesView: View {
                             NavigationLink{
                                 BreatheExerciseView()
                             }  label: {
-                                ExerciseCardView(exerciseName: "Deep breaths", exerciseDescription: "Lorem ipsum, Lorem ipsum")
-                            }
+                                ExerciseCardView(exerciseName: "Deep breaths", exerciseDescription: "Lorem ipsum, Lorem ipsum")}
+                            
+                            NavigationLink{
+                                ContentViewAudio()
+                            }  label: {
+                                ExerciseCardView(exerciseName: "Relaxing Music", exerciseDescription: "Lorem ipsum, Lorem ipsum")}
+                        
+                            
+                                
                         }
+                        
                     }
                 }
             }

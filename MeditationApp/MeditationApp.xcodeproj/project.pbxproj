@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3F91112F2A0D0C1800662DF5 /* AudioExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91112E2A0D0C1800662DF5 /* AudioExerciseView.swift */; };
+		3FCF42422A13906200A77C88 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42412A13906200A77C88 /* PlayerView.swift */; };
+		3FCF42442A1392D700A77C88 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42432A1392D700A77C88 /* PlaybackControlButton.swift */; };
+		3FCF42462A13968D00A77C88 /* AudioExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42452A13968D00A77C88 /* AudioExerciseViewModel.swift */; };
+		3FCF42482A13988200A77C88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42472A13988200A77C88 /* Extensions.swift */; };
+		3FCF424A2A139FA000A77C88 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42492A139FA000A77C88 /* AudioManager.swift */; };
+		3FCF424E2A13A2D000A77C88 /* ContentViewAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF424D2A13A2D000A77C88 /* ContentViewAudio.swift */; };
+		3FCF42522A13A6B900A77C88 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF42512A13A6B900A77C88 /* meditation1.mp3 */; };
 		D10831CE2A0B88F1004E3BAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D10831CD2A0B88F1004E3BAF /* GoogleService-Info.plist */; };
 		D10831D12A0B89C6004E3BAF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D10831D02A0B89C6004E3BAF /* FirebaseAuth */; };
 		D10831D32A0B89C6004E3BAF /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D10831D22A0B89C6004E3BAF /* FirebaseAuthCombine-Community */; };
@@ -47,7 +54,15 @@
 
 /* Begin PBXFileReference section */
 		3F91112E2A0D0C1800662DF5 /* AudioExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExerciseView.swift; sourceTree = "<group>"; };
-		D10831CD2A0B88F1004E3BAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3FCF42412A13906200A77C88 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3FCF42432A1392D700A77C88 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		3FCF42452A13968D00A77C88 /* AudioExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExerciseViewModel.swift; sourceTree = "<group>"; };
+		3FCF42472A13988200A77C88 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3FCF42492A139FA000A77C88 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3FCF424D2A13A2D000A77C88 /* ContentViewAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewAudio.swift; sourceTree = "<group>"; };
+		3FCF42512A13A6B900A77C88 /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		3FCF42532A13A75C00A77C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D10831CD2A0B88F1004E3BAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D10832032A0BC584004E3BAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D10832052A0BC6F2004E3BAF /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		D10832072A0BC970004E3BAF /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -110,6 +125,11 @@
 				D10832052A0BC6F2004E3BAF /* InputView.swift */,
 				D108320B2A0BCBA5004E3BAF /* SettingsRowView.swift */,
 				D10832192A0BF644004E3BAF /* ExerciseCardView.swift */,
+				3FCF42412A13906200A77C88 /* PlayerView.swift */,
+				3FCF42432A1392D700A77C88 /* PlaybackControlButton.swift */,
+				3FCF42452A13968D00A77C88 /* AudioExerciseViewModel.swift */,
+				3FCF42472A13988200A77C88 /* Extensions.swift */,
+				3FCF42492A139FA000A77C88 /* AudioManager.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -190,6 +210,7 @@
 				D10832172A0BF384004E3BAF /* ExercisesView.swift */,
 				D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */,
 				3F91112E2A0D0C1800662DF5 /* AudioExerciseView.swift */,
+				3FCF424D2A13A2D000A77C88 /* ContentViewAudio.swift */,
 			);
 			path = Exercises;
 			sourceTree = "<group>";
@@ -213,11 +234,13 @@
 		D140A3F42A095451009997D4 /* MeditationApp */ = {
 			isa = PBXGroup;
 			children = (
+				3FCF42532A13A75C00A77C88 /* Info.plist */,
 				D10831FC2A0BC520004E3BAF /* App */,
 				D10831FD2A0BC525004E3BAF /* Components */,
 				D10831FF2A0BC52E004E3BAF /* Model */,
 				D10831FE2A0BC52A004E3BAF /* Core */,
 				D140A3F92A095454009997D4 /* Assets.xcassets */,
+				3FCF42512A13A6B900A77C88 /* meditation1.mp3 */,
 				D140A3FB2A095454009997D4 /* Preview Content */,
 			);
 			path = MeditationApp;
@@ -314,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF42522A13A6B900A77C88 /* meditation1.mp3 in Resources */,
 				D140A3FD2A095454009997D4 /* Preview Assets.xcassets in Resources */,
 				D140A3FA2A095454009997D4 /* Assets.xcassets in Resources */,
 				D10831CE2A0B88F1004E3BAF /* GoogleService-Info.plist in Resources */,
@@ -328,19 +352,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10832042A0BC584004E3BAF /* LoginView.swift in Sources */,
+				3FCF42482A13988200A77C88 /* Extensions.swift in Sources */,
+				3FCF424A2A139FA000A77C88 /* AudioManager.swift in Sources */,
 				D10832182A0BF384004E3BAF /* ExercisesView.swift in Sources */,
 				D108321A2A0BF644004E3BAF /* ExerciseCardView.swift in Sources */,
+				3FCF42422A13906200A77C88 /* PlayerView.swift in Sources */,
 				D10832062A0BC6F2004E3BAF /* InputView.swift in Sources */,
 				D10832152A0BF2DE004E3BAF /* ScaffoldView.swift in Sources */,
 				3F91112F2A0D0C1800662DF5 /* AudioExerciseView.swift in Sources */,
 				D140A3F82A095451009997D4 /* ContentView.swift in Sources */,
 				D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */,
 				D108320E2A0BCD40004E3BAF /* User.swift in Sources */,
+				3FCF42442A1392D700A77C88 /* PlaybackControlButton.swift in Sources */,
 				D108321C2A0C0974004E3BAF /* BreatheExerciseView.swift in Sources */,
 				D108320A2A0BCB00004E3BAF /* ProfileView.swift in Sources */,
 				D10832082A0BC970004E3BAF /* RegistrationView.swift in Sources */,
 				D108320C2A0BCBA5004E3BAF /* SettingsRowView.swift in Sources */,
+				3FCF424E2A13A2D000A77C88 /* ContentViewAudio.swift in Sources */,
 				D10832122A0BD6B1004E3BAF /* AuthViewModel.swift in Sources */,
+				3FCF42462A13968D00A77C88 /* AudioExerciseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +501,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeditationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +530,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeditationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
