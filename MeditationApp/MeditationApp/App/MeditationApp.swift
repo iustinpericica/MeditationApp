@@ -11,11 +11,14 @@ import Firebase
 
 @main
 struct MeditationApp: App {
+    @StateObject var audioManager = AudioManager()
     @StateObject var viewModel = AuthViewModel()
+     
     var body: some Scene {
       WindowGroup {
           ContentView()
               .environmentObject(viewModel)
+              .environmentObject(audioManager)
       }
     }
     
