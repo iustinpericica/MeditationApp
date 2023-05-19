@@ -16,6 +16,11 @@ struct BreatheExerciseView: View {
     @State var timerCount: CGFloat = 0
     @State var breatheAction: String = "Breathe In"
     @State var count: Int = 0
+    
+    @State private var exerciseLiked = UserDefaults.standard.bool(forKey: "BreatheLiked")
+    
+    private var impactMed = UIImpactFeedbackGenerator(style: .medium)
+    
     var body: some View {
         ZStack {
             Background()
@@ -36,6 +41,7 @@ struct BreatheExerciseView: View {
             if showBreatheView {
                 if timerCount > 3.2 {
                     timerCount = 0
+                    impactMed.impactOccurred()
                     breatheAction = (breatheAction == "Breathe Out" ? "Breathe In" : "Breathe Out")
                     withAnimation(.easeInOut(duration: 3).delay(0.1)) {
                         startAnimation.toggle()
@@ -62,9 +68,10 @@ struct BreatheExerciseView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Button {
-                    
+                    exerciseLiked.toggle()
+                    UserDefaults.standard.set(exerciseLiked, forKey: "BreatheLiked")
                 } label: {
-                    Image(systemName: "suit.heart")
+                    Image(systemName: exerciseLiked ? "suit.heart.fill" : "suit.heart")
                         .font(.title2)
                         .foregroundColor(.white)
                         .frame(width: 42, height: 42)

@@ -34,7 +34,6 @@ struct ExercisesView: View {
             }
             .padding(.leading, 30)
         }
-        
     }
 }
 

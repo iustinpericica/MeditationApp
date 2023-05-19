@@ -15,7 +15,6 @@
 		3FCF424A2A139FA000A77C88 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF42492A139FA000A77C88 /* AudioManager.swift */; };
 		3FCF424E2A13A2D000A77C88 /* ContentViewAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF424D2A13A2D000A77C88 /* ContentViewAudio.swift */; };
 		3FCF42522A13A6B900A77C88 /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FCF42512A13A6B900A77C88 /* meditation1.mp3 */; };
-		D10831CE2A0B88F1004E3BAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D10831CD2A0B88F1004E3BAF /* GoogleService-Info.plist */; };
 		D10831D12A0B89C6004E3BAF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D10831D02A0B89C6004E3BAF /* FirebaseAuth */; };
 		D10831D32A0B89C6004E3BAF /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D10831D22A0B89C6004E3BAF /* FirebaseAuthCombine-Community */; };
 		D10831D52A0B89C6004E3BAF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D10831D42A0B89C6004E3BAF /* FirebaseCrashlytics */; };
@@ -46,6 +45,8 @@
 		D10832182A0BF384004E3BAF /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832172A0BF384004E3BAF /* ExercisesView.swift */; };
 		D108321A2A0BF644004E3BAF /* ExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10832192A0BF644004E3BAF /* ExerciseCardView.swift */; };
 		D108321C2A0C0974004E3BAF /* BreatheExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */; };
+		D13F545F2A16CFF800B6E9E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D13F545E2A16CFF800B6E9E4 /* GoogleService-Info.plist */; };
+		D13F54632A16D36900B6E9E4 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F54622A16D36800B6E9E4 /* LocationView.swift */; };
 		D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F52A095451009997D4 /* MeditationApp.swift */; };
 		D140A3F82A095451009997D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140A3F72A095451009997D4 /* ContentView.swift */; };
 		D140A3FA2A095454009997D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D140A3F92A095454009997D4 /* Assets.xcassets */; };
@@ -74,6 +75,9 @@
 		D10832172A0BF384004E3BAF /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
 		D10832192A0BF644004E3BAF /* ExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardView.swift; sourceTree = "<group>"; };
 		D108321B2A0C0974004E3BAF /* BreatheExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheExerciseView.swift; sourceTree = "<group>"; };
+		D13F545E2A16CFF800B6E9E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D13F54602A16D05C00B6E9E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13F54622A16D36800B6E9E4 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		D140A3F22A095451009997D4 /* MeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D140A3F52A095451009997D4 /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		D140A3F72A095451009997D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				D10832092A0BCB00004E3BAF /* ProfileView.swift */,
+				D13F54622A16D36800B6E9E4 /* LocationView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -238,7 +243,9 @@
 				D10831FC2A0BC520004E3BAF /* App */,
 				D10831FD2A0BC525004E3BAF /* Components */,
 				D10831FF2A0BC52E004E3BAF /* Model */,
+				D13F54602A16D05C00B6E9E4 /* Info.plist */,
 				D10831FE2A0BC52A004E3BAF /* Core */,
+				D13F545E2A16CFF800B6E9E4 /* GoogleService-Info.plist */,
 				D140A3F92A095454009997D4 /* Assets.xcassets */,
 				3FCF42512A13A6B900A77C88 /* meditation1.mp3 */,
 				D140A3FB2A095454009997D4 /* Preview Content */,
@@ -338,9 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCF42522A13A6B900A77C88 /* meditation1.mp3 in Resources */,
+				D13F545F2A16CFF800B6E9E4 /* GoogleService-Info.plist in Resources */,
 				D140A3FD2A095454009997D4 /* Preview Assets.xcassets in Resources */,
 				D140A3FA2A095454009997D4 /* Assets.xcassets in Resources */,
-				D10831CE2A0B88F1004E3BAF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +368,7 @@
 				D10832152A0BF2DE004E3BAF /* ScaffoldView.swift in Sources */,
 				3F91112F2A0D0C1800662DF5 /* AudioExerciseView.swift in Sources */,
 				D140A3F82A095451009997D4 /* ContentView.swift in Sources */,
+				D13F54632A16D36900B6E9E4 /* LocationView.swift in Sources */,
 				D140A3F62A095451009997D4 /* MeditationApp.swift in Sources */,
 				D108320E2A0BCD40004E3BAF /* User.swift in Sources */,
 				3FCF42442A1392D700A77C88 /* PlaybackControlButton.swift in Sources */,
@@ -499,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NHS9FDV933;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationApp/Info.plist;
@@ -528,6 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NHS9FDV933;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationApp/Info.plist;
